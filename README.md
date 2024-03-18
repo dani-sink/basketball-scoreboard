@@ -21,3 +21,5 @@ A project where I designed the scoreboard for a basketball game. Following are t
 9) There is a timer of 12 minutes for each period.
 
 10) The game ends at the end of the 4th period. At which point the scoreboard simply resets.
+
+Site link: https://splendorous-mochi-79dbdd.netlify.app
