@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    background: #1B244A;
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    text-align: center;
+    height:80vh;
+}
+
+@font-face {
+    font-family: CursedTimer;
+    src: url(CursedTimerUlil.ttf);
+}
+  
+.square-container {
+    margin-top: -20px;
+    display: flex;
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    margin: 0 0 10px 0;
+    color: #F94F6D;
+    font-family: CursedTimer;
+    font-weight: bold;
+    font-size: 75px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#home-txt, #guest-txt {
+    margin-bottom: 5px;
+}
+
+#timer-container {
+    margin-top: 290px;
+    font-family: CursedTimer;
+}
+
+#timer {
+    display: flex;
+    background: #080001;
+    width: 610px;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 150px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#other-info {
+    display: flex;
+    margin-top: -40px;
+    display: flex;
+    width: 585px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-info-square {
+    width: 105px;
+    height: 130px;
+    font-size: 32px;
+    margin: 0 -20px;
+    text-align: center;
+}
+
+.other-info-square p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.fouls-txt {
+    padding-left: 5px;
+}
+
+.black-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    width: 130px;
+    height: 130px;
+    padding-top: 15px;
+    background: #080001;
+    border-radius: 10px;
+}
+
+.foul-square {
+    margin-top: -25px;
+}
+.period-square {
+    margin-bottom: -25px;
+}
+
+#period-sqr {
+    margin-top: 80px;
+}
+
+.score-button {
+    background: transparent;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    width: 45px;
+    height: 45px;
+    margin: 0 -2px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: CursedTimer;
+    cursor: pointer;
+}
+
+.score-button:hover {
+    background: #9AABD8;
+    color: #1B244A;
+}
+
+.foul-button {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: CursedTimer;
+    cursor: pointer;
+    width: 115px;
+    height: 50px;
+}
+
+.foul-button:hover {
+    background: #9AABD8;
+    color: #1B244A;
+}
+
+.possession-area {
+    font-size: 18px;
+    display: flex;
+    font-family: CursedTimer;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circle-container {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #9AABD8;
+    border-radius: 100%;
+}
+
+.circle-button-container {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #9AABD8;
+    border-radius: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.bonus-area {
+    font-size: 18px;
+    display: flex;
+    font-family: CursedTimer;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#left-container {
+    margin-top: 80px;
+    margin-right: 18vh;
+    transform: scale(2.0);
+}
+
+#right-container {
+    margin-top: 80px;
+    margin-left: 18vh;
+    transform: scale(2.0);
+}
+
+.middle-part {
+    margin-top: 100px;
+}
+
+#new-game-button {
+    display: flex;
+    margin: 0 auto;
+    background: transparent;
+    border: 4px solid #9AABD8;
+    color: #9AABD8;
+    width: 345px;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+    font-size: 43px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pause-and-restart {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: start;
+}
+
+.pause-and-restart-buttons {
+    display: flex;
+    background: transparent;
+    border: 4px solid #9AABD8;
+    color: #9AABD8;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 245px;
+    height: 75px;
+    font-size: 37px;
+    margin: 20px 20px;
+}
+
+.pause-and-restart-buttons:hover{
+    background: #9AABD8;
+    color: #1B244A;
+
+}
+
+#new-game-button:hover {
+    background: #9AABD8;
+    color: #1B244A;
+}
+
+.foul-button:active, .pause-and-restart-buttons:active, .score-button:active {
+
+    background: #F94F6D;
+    color: #1B244A;
+}

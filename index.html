@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BASKETBALL SCOREBOARD</title>
+</head>
+<body>
+    <div class="container">
+        <div id="left-container">
+            <h3 id="home-txt" >HOME</h3>
+            <div class="square-container" id="home-el">0
+            </div>
+            <div class="score-buttons">
+                <button class="score-button" onclick="incrementOneHomeCount(), whoLeads()">+1</button>
+                <button class="score-button" onclick="incrementTwoHomeCount(), whoLeads()">+2</button>
+                <button class="score-button" onclick="incrementThreeHomeCount(), whoLeads()">+3</button>
+            </div>
+            <div class="foul-buttons">
+                <button class="foul-button" onclick="addFoulHome(), bonusGuest()">ADD FOUL</button>
+            </div>
+            <div class="possession-area">
+                <button class="circle-button-container" id="poss-home" onclick="setPossessionToHome()"></button>
+                <p>POSS</p>
+            </div>
+            <div class="bonus-area">
+                <div class="circle-container" id="bonus-home"></div>
+                <p>BONUS</p>
+            </div>
+        </div>
+        <div id="timer-container">
+            <div id="timer">12:00</div>
+            <div id="other-info">
+                <div class="other-info-square">
+                    <p class="fouls-txt">FOULS</p>
+                    <div class="black-square foul-square" id="fouls-home">0</div>
+                </div>
+                <div class="other-info-square" id="period-sqr">
+                    <div class="black-square period-square" id="period-square-id">1</div>
+                    <p>PERIOD</p>
+                </div>
+                <div class="other-info-square">
+                    <p class="fouls-txt">FOULS</p>
+                    <div class="black-square foul-square" id="fouls-guest">0</div>
+                </div>
+            </div>
+            <div class="middle-part">
+                <div class="pause-and-restart">
+                    <button class="pause-and-restart-buttons" onclick="pauseTimer()" id="pause-button">PAUSE</button>
+                    <button class="pause-and-restart-buttons" onclick="restartTimer()" id="resume-button">RESUME</button>
+                </div>
+                <button id="new-game-button" onclick="newGame()">NEW GAME</button>
+            </div>
+        </div>
+        <div id="right-container">
+            <h3 id="guest-txt">GUEST</h3>
+            <div class="square-container" id="guest-el">0
+            </div>
+            <div class="score-buttons">
+                <button class="score-button" onclick="incrementOneGuestCount(), whoLeads()">+1</button>
+                <button class="score-button" onclick="incrementTwoGuestCount(), whoLeads()">+2</button>
+                <button class="score-button" onclick="incrementThreeGuestCount(), whoLeads()">+3</button>
+            </div>
+            <div class="foul-buttons">
+                <button class="foul-button" onclick="addFoulGuest(), bonusHome()">ADD FOUL</button>
+            </div>
+            <div class="possession-area">
+                <button class="circle-button-container" id="poss-guest" onclick="setPossessionToGuest()"></button>
+                <p>POSS</p>
+            </div>
+            <div class="bonus-area">
+                <div class="circle-container" id="bonus-guest"></div>
+                <p>BONUS</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
